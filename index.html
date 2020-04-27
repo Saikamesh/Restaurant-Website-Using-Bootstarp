@@ -46,13 +46,17 @@
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our
                         lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm align-self-center">
-                    <img src="./img/logo.png" alt="" class="img-fluid">
+                <div class="row">
+                    <div class="col-12 col-sm-6 align-self-center">
+                        <img src="./img/logo.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-sm-6 align-self-center">
+                        <a href='#table-reserve' role="button" class="btn btn-block btn-sm btn-warning"
+                            id="reserve Btn.">Reserve
+                            Table
+                        </a>
+                    </div>
                 </div>
-
-                <!-- button here names reserved tabel -->
-
-
             </div>
         </div>
     </header>
@@ -124,6 +128,55 @@
         </div>
 
         <!-- Card with user inputs and submit button -->
+        <div class="row">
+            <div class="col-12 col-sm-6 offset-2">
+                <div class="card mb-3">
+                    <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
+                    <div class="card-body">
+                        <form id="table-reserve" action="">
+                            <div class="form-group row">
+                                <label for="numofguest" class="col-12 col-sm-4 col-form-label">Number of
+                                    Guests</label>
+                                <div class='col-12 col-sm-8'>
+                                    <div class="radio radio-inline">
+                                        <label><input type="radio" class="radio" name="Num. of Guests">1 </label>
+                                        <label><input type="radio" class="radio" name="Num. of Guests">2 </label>
+                                        <label><input type="radio" class="radio" name="Num. of Guests">3 </label>
+                                        <label><input type="radio" class="radio" name="Num. of Guests">4 </label>
+                                        <label><input type="radio" class="radio" name="Num. of Guests">5 </label>
+                                        <label><input type="radio" class="radio" name="Num. of Guests">6 </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="dateandtime" class="col-12 col-md-2 col-form-label">Date and Time</label>
+                                <div class="col-12 col-md-8">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6">
+                                            <input required type="text" name="date" class=" form-control"
+                                                placeholder="Date">
+                                        </div>
+                                        <div class="col-12 col-sm-6">
+                                            <input required type="text" name="time" class="form-control"
+                                                placeholder="Time">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary offset-2">
+                                Reserve
+                            </button>
+
+
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
 
     </div>
